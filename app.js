@@ -5,6 +5,8 @@ const http = require('http');
 const hostname = '127.0.0.1';
 const port = 3000;
 
+// To create the server you have to use require directive to ready the HTTP module and store the returned HTTP instance into an HTTP variable. Here We used the HTTP instance that we created and call createServer method to create a server instance and then we bind it at port 8081 using the listen to method associated with the server instance. Pass request and response parameters in a function. Here is the sample implementation which always returns "Hello World".
+
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
@@ -46,3 +48,14 @@ eventEmitter.emit('connection');
 
 console.log("Program Ended.");
 
+// npm i express
+const express = require("express");
+const app = express();
+// req.query Property-
+// It is an object containing the property for each query string parameter in the route.
+app.get('/profile', function (req, res) {
+  console.log(req.query.name);
+  res.send();
+});
+
+// To run the above code http://localhost:3000/profile?name=adam
