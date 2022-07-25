@@ -13,6 +13,7 @@ const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });   // Send the HTTP header, HTTP Status: 200 : OK, Content Type: text/plain
   console.log('got http://127.0.0.1:8081/');
   res.write('hi');
+  // if a request is made through the browser on this port number, then the server application will send a 'Hello' World' response to the client. http://localhost:8081
   res.end('Hello World\n');  // Send the response body as "Hello World"
 });
 
