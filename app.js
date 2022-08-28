@@ -9,8 +9,7 @@ const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
   res.writeHead(200, { 'Content-Type': 'text/plain' });   
-  console.log('got http://127.0.0.1:8081/');
-  res.write('hi');
+  res.write('hi\n');
   res.end('Hello World\n'); 
 });
 
