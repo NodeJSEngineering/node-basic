@@ -23,12 +23,6 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 basic server creation using express. discussion on events, module.
 
 ### useful commands to run project
-- npm run serve
-- node index.js add
-- node app.js --version
-- node app.js add --title="Buy" --body="Note body here"
-- node inspect index.js  // debugging
-- node filename.js
 
 ### Packages used
 -     "https-proxy-agent": "^5.0.1"
